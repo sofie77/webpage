@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(51, 102, 102);
+}
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-style:inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fixed-navigation{
+    color: blue;
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 9999;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 15px;
+
+    
+}
+.fixed-navigation a {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:50px;
+    
+}
+.fixed-navigation a:hover {
+    color: blueviolet;
+}
+#journey {
+    width: 400px;
+
+
+}
+.sidebar {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    width: 200px;
+
+
+}
+main {
+    width: 500px;
+    overflow: hidden;
+}
+#page {
+    background-color: white;
+    width: 250px;
+    text-align: center;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.fixed-footer-nav a {
+    color: blue;
+    padding: 100px;
+    
+
+}
+.fixed-footer-nav a:hover {
+    color: blueviolet;
+}
+
+:root {
+    --background: rgb(5, 48, 59);
+}
