@@ -1,0 +1,234 @@
+body {
+    background-color: var(--background);
+}
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-style:inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fixed-navigation{
+    color: var(--link);
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 9999;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 15px;
+
+    
+}
+.fixed-navigation a {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:50px;
+    
+}
+.fixed-navigation a:hover {
+    color: var(--hover);
+}
+#journey {
+    width: 400px;
+}
+.other-section{
+    align-items: center;
+}
+.sidebar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width: 300px;
+    left: 0;
+    right: 0;
+    padding-top: 40px;
+    text-align: center;
+    
+
+
+}
+section {
+    display: flex;
+}
+article, aside {
+    border-radius: 2em;
+    margin: 0.5em;
+    padding: 1em 2em;
+    background-color: var(--boxes);
+}
+article{
+    flex: 5;
+}
+aside{
+    flex: 2;
+}
+#aaaaaaa {
+    padding-top: 20px;
+    
+}
+.sidebar div {
+    padding: 8px;
+    display: block;
+}
+main {
+
+    overflow: hidden;
+}
+#page {
+    background-color: white;
+    width: 250px;
+    text-align: center;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--ligher);
+
+}
+.fixed-footer-nav a {
+    color: var(--link);
+    padding: 100px;
+  
+}
+.fixed-footer-nav a:hover {
+    color: var(--hover);
+}
+.calculator-grid {
+    display: grid;
+    justify-content: left;
+    align-items: left;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculator-grid > button {
+    font-size: 1rem;
+    border: 1px;
+    
+    background-color: var(--boxes);
+}
+.calculator-grid > button:hover {
+    background-color: var(--buttons);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: minmax(50px, auto) repeat(5, 50px);
+}
+.span-two {
+    grid-column: span 2;
+}
+  
+.output{
+    grid-column: 1 / -1;
+    background-color: var(--buttons);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+  
+.output .previous-operand{
+    color: var(--buttons);
+    font-size: 1rem;
+}
+  
+.output .current-operand{
+    color: white;
+    font-size: 1rem;
+}
+ul {
+    list-style: none
+
+}
+input [type=text] {
+    padding: 10px;
+
+}
+input [type=textarea]{
+    padding: 10px;
+}
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 140%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+.togglebutton{
+    padding-left: 100px;
+}
+#popup{
+    padding-left: 100px;
+}
+:root {
+    --background: rgb(51, 102, 102);
+    --boxes: rgb(189, 189, 189);
+    --ligher: rgb(61, 121, 121);
+    --darker: rgb(9, 51, 9);
+    --hover:  blueviolet;
+    --link: blue;
+    --buttons: #a9a9a9;
+
+
+
+} 
